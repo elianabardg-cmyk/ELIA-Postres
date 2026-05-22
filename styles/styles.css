@@ -1,0 +1,71 @@
+@import url('https://fonts.googleapis.com/css2?family=Marcellus&family=Mogra&family=Playwrite+NO:wght@100..400&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Marcellus;
+}
+.logo{
+    height: 20vh;
+    width: auto;
+}
+.redes{
+    height: 10vh;
+    width: auto;
+}
+ul{
+    list-style: none;
+}
+a{
+    text-decoration: none;
+    color: #5E5148;
+} 
+header{
+    height: 50vh;
+    }
+.whatsapp{
+    position: fixed;
+    bottom: 50px;
+    right: 50px;
+}
+body{
+    height: 100vh;
+    width: 100vw;
+    display: grid;
+    grid-template-columns: repeat(12,1fr);
+    grid-template-rows: repeat(12,1fr);
+    }
+    header{
+        background-color: aqua;
+        height: 10vh;
+        display: grid;
+        grid-row: 2/4;
+        grid-column:1/13;
+        grid-template-columns: repeat(10,1fr);
+        }
+    
+    h1{
+        grid-column: 2/4;
+        grid-row: 3/4;
+    }
+    main{
+        background-color: greenyellow;
+        grid-row: 4/10;
+        grid-column:1/13;
+    }
+    footer{
+        background-color: burlywood;
+        height: 10vh;
+        grid-row: 10/13;
+        grid-column: 1/13;
+        display: grid;
+        grid-template-columns: repeat(10,1fr);
+        justify-items: center;
+        align-items: center;
+    }
+    .active{
+        color: red;
+        background-color: antiquewhite;
+    }
+    

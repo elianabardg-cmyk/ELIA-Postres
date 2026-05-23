@@ -1,64 +1,251 @@
 <!DOCTYPE html>
 <html lang="es-ar">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>ELIA - Tienda</title>
 
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
     <link rel="stylesheet" href="../styles/styles.css">
-</head>
-<body>
-    <header>
-        <a href="../index.html">
-            <img src="../assets/logos/logo.png" alt="Logo de ELIA" class="logo">
-        </a>
-        
-        <h1>ELIA</h1>
-        <h2>Mas que postres creamos experiencias</h2>
-        
+    <link rel="shortcut icon" href="../assets/logos/logo.png" type="image/x-icon">
 
+    <meta name="descrption"
+        content="Conoce nuestros PRODUCTOS para endulzar tus momentos y hacerlos aún más ESPECIALES">
+    <meta name="keywords" content="Postres dulces, catalogo de postres, tortas, dulces, candy bar">
+    <meta name="author" content="Eli Bard Guastoni">
+    <meta name="owner" content="Eli Bard Guastoni">
+
+    <meta property="og:title" content="Productos dulces| alfajores artesanales, tartas y petit fours">
+    <meta property="og:description"
+        content="Descubrí los mejores postres para acompañar tus momentos mas importantes y especiales">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://elianabardg-cmyk.github.io/ELIA-Postres/pages/productos.html">
+    <meta property="og:image"
+        content="https://raw.githubusercontent.com/elianabardg-cmyk/ELIA-Postres/refs/heads/main/assets/logos/logo.png">
+    <meta property="og:site_name" content="ELIA-Postres">
+    <meta property="og:locale" content="es_AR">
+
+    <meta name="twitter: card" content="summary_large_image">
+    <meta name="twitter: title" content="Catálogo de Postres Especiales">
+    <meta name="twitter: description"
+        content="Explorá el catálogo con los postres más deliciosos para convertir cada momento en un momento Espcecial">
+    <meta name="twitter: image"
+        content="https://raw.githubusercontent.com/elianabardg-cmyk/ELIA-Postres/refs/heads/main/assets/logos/logo.png">
+</head>
+
+<body>
+    <header class="header sticky-top text-center">
+        <nav class="navbar navbar-expand-lg mx-2 mx-md-3" data-bs-theme="pink">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="../index.html">
+                    <img src="../assets/logos/logo.png" alt="Logo de ELIA-Postres" class="logo">
+                </a>
+                <button class="navbar-toggler" type="button" data-bs-toggler="collapse"
+                    data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false"
+                    aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse justify-content-end" id="navbarNavAltMarkup">
+                    <div class="navbar-nav">
+                        <a class="nav-link active" aria-current="page" href="./productos.html">Productos</a>
+                        <a class="nav-link" href="./galeria.html">Galeria</a>
+                        <a class="nav-link" href="./sobre_mi.html">Historia</a>
+                        <a class="nav-link" href="./contacto.html">Contacto</a>
+                    </div>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <main class="prod">
+        <h1 class="text-center fw-bold">¡Conoce nuestros productos especiales!</h1>
+        <section>
+            <div class="container mt-5">
+                <div class="row">
+                    <div class="col d-flex flex-column align-items-center">
+                        <h2 class="special">Petit Fours</h2>
+                        <img src="../assets/logos/petit-fours.jpg" class="img-head" alt="ELIA-Postres, Petit Fours">
+                    </div>
+                </div>
+                <div class="row row-cols-sm-1 row-cols-md-2 row-cols-xl-3 justify-content-center">
+                    <div class="col-sm-12 col-md-8 col-lg-5 d-flex flex-column align-items-center gap-3">
+                        <div id="carouselPetit" class="carousel slide">
+                            <div class="carousel-indicators">
+                                <button type="button" data-bs-target="#carouselPetit" data-bs-slide-to="0"
+                                    class="active" aria-current="true" aria-label="Slide 1"></button>
+                                <button type="button" data-bs-target="#carouselPetit" data-bs-slide-to="1"
+                                    class="active" aria-current="true" aria-label="Slide 2"></button>
+                            </div>
+                            <div class="carrousel-inner">
+                                <div class="carousel-item active">
+                                    <img src="../assets/logos/PetitfoursII.jpg" class="d-block w-100"
+                                        alt="ELIA-Postres,Petit Fours">
+
+                                </div>
+                                <div class="carousel-item">
+                                    <img src="../assets/logos/Petit.jpg" class="d-block w-100"
+                                        alt="ELIA-Postres,Petit Fours">
+                                </div>
+                            </div>
+                            <div class="carousel-caption">
+                                <h5 class="special">Pequeñas obras dulces que convierten un instante en un recuerdo
+                                    hermoso.</h5>
+                            </div>
+                            <button class="carousel-control-prev" type="button" data-bs-target="#carouselPetit"
+                                data-bs-slide="prev">
+                                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                <span class="visually-hidden">Previous</span>
+                            </button>
+                            <button class="carousel-control-next" type="button" data-bs-target="#carouselPetit"
+                                data-bs-slide="next">
+                                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                <span class="visually-hidden">Next</span>
+                            </button>
+                        </div>
+                        <h3 class="text-center">$12.500</h3>
+                        <button type="button" class="btn btn-success">Comprar</button>
+                    </div>
+                    <div class="col">
+                        <h4 class="text-center my-3 fw-bold">Elegancia:</h4>
+                        <h4>Tan delicados como especiales</h4>
+                        <h4>Pequeñas joyas de dulzura.</h4>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <hr>
+        <section>
+        <div class="container mt-5">
+            <div class="row">
+                <div class="col d-flex flex-column align-items-center">
+                    <h2 class="special">Alfajores</h2>
+                    <img src="../assets/logos/alfajores.jpg" alt="Alfajores" class="img-head">
+                </div>
+            </div>
+            <div class="row row-cols-sm-1 row-cols-md-2 row-cols-xl-3 justify-content-center">
+                <div class="col-sm-12 col-md-8 col-lg-5 d-flex flex-column align-items-center gap-3">
+                    <div id="carouselAlfajores" class="carousel slide">
+                        <div class="carousel-indicators">
+                            <button type="button" data-bs-target="#carouselAlfajores" data-bs-slide-to="0"
+                                class="active" aria-current="true" aria-label="Slide 1"></button>
+                            <button type="button" data-bs-target="#carouselAlfajores" data-bs-slide-to="1"
+                                aria-label="Slide 2"></button>
+                        </div>
+                        <div class="carousel-inner">
+                            <div class="carousel-item active">
+                                <img src="../assets/logos/alfajorI.jpg" class="d-block w-100"
+                                    alt="ELIA-Postres, Alfajores">
+                            </div>
+                            <div class="carousel-item">
+                                <img src="../assets/logos/alfajor.jpg" class="d-block w-100"
+                                    alt="ELIA-Postres, Alfajores">
+                            </div>
+                        </div>
+                        <div class="carousel-caption">
+                            <h5 class="special">Alfajores artesanales hechos con dedicación, pensados para convertir
+                                cualquier momento en algo un poquito más dulce.</h5>
+                        </div>
+                        <button class="carousel-control-prev" type="button" data-bs-target="#carouselAlfajores"
+                            data-bs-slide="prev">
+                            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                            <span class="visually-hidden">Previous</span>
+                        </button>
+                        <button class="carousel-control-next" type="button" data-bs-target="#carouselAlfajores"
+                            data-bs-slide="next">
+                            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                            <span class="visually-hidden">Next</span>
+                        </button>
+                    </div>
+                    <h3>$10.500</h3>
+                    <button type="button" class="btn btn-success">Comprar</button>
+                </div>
+                <div class="col">
+                    <h4 class="text-center my-3 fw-bold">Elegancia:</h4>
+                    <h4>La simple belleza de lo hecho con amor.</h4>
+                    <h4>Hechos a mano para endulzar momentos que merecen quedarse.</h4>
+                </div>
+                </section>
+                <hr>
+                <section>
+                    <div class="container mt-5">
+                <div class="row">
+                    <div class="col d-flex flex-column align-items-center">
+                        <h2 class="special">Clásicos</h2>
+                        <h3 class="special text-center">Un detalle dulce, delicado y tentador para compartir o regalarte.</h5>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-sm-12 col-md-12 col-xl-5 d-flex flex-column align-items-center gap-3">
+                        <div id="carouselClasicos" class="carousel slide">
+                            <div class="carousel-indicators">
+                                <button type="button" data-bs-target="#carouselClasicos" data-bs-slide-to="0"
+                                    class="active" aria-current="true" aria-label="Slide 1"></button>
+                                <button type="button" data-bs-target="#carouselClasicos" data-bs-slide-to="1"
+                                    aria-label="Slide 2"></button>
+                            </div>
+                            <div class="carousel-inner">
+                                <div class="carousel-item active">
+                                    <img src="../assets/logos/clasicos.jpg" class="d-block w-100" alt="ELIA-Postres, clasicos">
+                                </div>
+                                <div class="carousel-item">
+                                    <img src="../assets/logos/clasicosi.jpg" class="d-block w-100" alt="ELIA-Postres, clasicos">
+                                </div>
+                            </div>
+                            <button class="carousel-control-prev" type="button"
+                                data-bs-target="#carouselClasicos" data-bs-slide="prev">
+                                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                <span class="visually-hidden">Previous</span>
+                            </button>
+                            <button class="carousel-control-next" type="button"
+                            data-bs-target="#carouselClasicos" data-bs-slide="next">
+                            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                            <span class="visually-hidden">Next</span>
+                        </button>
+                    </div>
+                    <h3>$10.500</h3>
+                    <button type="button" class="btn btn-success">Comprar</button>
+                    </div>
+                    <div class="col">
+                    <h4 class="text-center my-3 fw-bold">Elegancia:</h4>
+                    <h4>La simple belleza de lo hecho con amor.</h4>
+                    <h4>Sabores que despiertan recuerdos bonitos</h4>
+                </div>
+                </section>                
+    </main>
+
+    <footer class="footer">
+        <h2>Derechos Reservados</h2>
+        <h2>Creado por Eli Bard Guastoni❤️</h2>
         <nav>
-            <ul>
+            <ul class="rs">
                 <li>
-                    <a href="./productos.html">Productos</a>
+                    <a href="https://www.instagram.com/" target="_blank">
+                        <img src="../assets/logos/instagram (2).png" alt="Logo de Instagram" class="rrss">
+                    </a>
                 </li>
                 <li>
-                    <a href="./galeria.html">Galeria</a>
+                    <a href="https://www.facebook.com/" target="_blank">
+                        <img src="../assets/logos/facebook (2).png" alt="Logo de facebook" class="rrss">
+                    </a>
                 </li>
                 <li>
-                    <a href="./sobre_mi.html">Sobre mi</a>
+                    <a href="https://www.x.com/" target="_blank">
+                        <img src="../assets/logos/x.png" alt="Logo de X (Twitter)" class="rrss">
+                    </a>
                 </li>
                 <li>
-                    <a href="./contacto.html">Contacto</a>
+                    <a href="https://web.whatsapp.com/" target="_blank">
+                        <img src="../assets/logos/whatsapp (2).png" alt="Logo de WhatsApp" class="rrss wa">
+                    </a>
                 </li>
             </ul>
         </nav>
-
-    </header>
-
-    <main>
-        <section>
-            <h2>Petit Fours</h2>
-            <img src="ruta de la imagen" alt="Petit Fours" class="imagenproducto">
-            <p>Descripción de los petit fours.</p>
-        </section>
-        <section>
-            <h2>Alfajores</h2>
-            <img src="ruta foto alfajores" alt="Alfajores" class="imagenproducto">
-            <p>Descripción de los alfajores</p>
-        </section>
-        <section>
-            <h2>Cuchareables</h2>
-            <img src="ruta foto cuchareables" alt="Cuchareables" class="imagenproducto">
-            <p>Descripción de los cuchareables</p>
-        </section>
-        <section>
-            <h2>Clasicos</h2>
-            <img src="ruta foto clasicos" alt="Clasicos" class="imagenproducto">
-            <p>Descripción de los clasicos</p>
-        </section>
-    </main>
-
-    
+    </footer>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
+        crossorigin="anonymous"></script>
 </body>
+
 </html>

@@ -3,89 +3,119 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>ELIA - Contacto</title>
+    <title>ELIA - Tienda</title>
 
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
     <link rel="stylesheet" href="../styles/styles.css">
+    <link rel="shortcut icon" href="../assets/logos/logo.png" type="image/x-icon">
+
+    <meta name="descrption"
+        content="Conoce nuestros PRODUCTOS para endulzar tus momentos y hacerlos ESPECIALES">
+    <meta name="keywords" content="Postres dulces, catalogo de postres, tortas, dulces, candy bar">
+    <meta name="author" content="Eli Bard Guastoni">
+    <meta name="owner" content="Eli Bard Guastoni">
+
+    <meta property="og:title" content="Productos dulces| alfajores artesanales, tartas y petit fours">
+    <meta property="og:description"
+        content="¿Tenes dudas? Contactanos y te asesoramos para que elijas el postre ideal para vos">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://elianabardg-cmyk.github.io/ELIA-Postres/pages/contacto.html">
+    <meta property="og:image"
+        content="https://raw.githubusercontent.com/elianabardg-cmyk/ELIA-Postres/refs/heads/main/assets/logos/logo.png">
+    <meta property="og:site_name" content="ELIA-Postres">
+    <meta property="og:locale" content="es_AR">
+
+    <meta name="twitter: card" content="summary_large_image">
+    <meta name="twitter: title" content="Catálogo de Postres Especiales">
+    <meta name="twitter: description"
+        content="Explorá el catálogo con los postres más deliciosos para convertir cada momento en un momento Espcecial">
+    <meta name="twitter: image"
+        content="https://raw.githubusercontent.com/elianabardg-cmyk/ELIA-Postres/refs/heads/main/assets/logos/logo.png">
 </head>
 <body>
-    <header>
-        <a href="../index.html">
-            <img src="../assets/logos/logo.png" alt="Logo de ELIA" class="logo">
-        </a>
-        
-        <h1>ELIA</h1>
-        <h2>Mas que postres creamos experiencias</h2>
-        
-
-        <nav>
-            <ul>
-                <li>
-                    <a href="./productos.html">Productos</a>
-                </li>
-                <li>
-                    <a href="./galeria.html">Galeria</a>
-                </li>
-                <li>
-                    <a href="./sobre_mi.html">Sobre mi</a>
-                </li>
-                <li>
-                    <a href="./contacto.html">Contacto</a>
-                </li>
-            </ul>
+    <header class="header sticky-top text-center">
+        <nav class="navbar navbar-expand-lg mx-2 mx-md-3" data-bs-theme="pink">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="../index.html">
+                    <img src="../assets/logos/logo.png" alt="Logo de ELIA-Postres" class="logo">
+                </a>
+                <button class="navbar-toggler" type="button" data-bs-toggler="collapse"
+                    data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false"
+                    aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse justify-content-end" id="navbarNavAltMarkup">
+                    <div class="navbar-nav">
+                        <a class="nav-link" href="./productos.html">Productos</a>
+                        <a class="nav-link" href="./galeria.html">Galeria</a>
+                        <a class="nav-link" href="./sobre_mi.html">Historia</a>
+                        <a class="nav-link active" aria-current="page" href="./contacto.html">Contacto</a>
+                    </div>
+                </div>
+            </div>
         </nav>
-
     </header>
 
-    <main>
+    <main class="contacto">
         <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3271.0000141969463!2d-57.9409026!3d-34.9315366!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95a2e898cf3685eb%3A0x7c15a9f42ec57979!2sParque%20Saavedra!5e0!3m2!1ses!2sar!4v1779129833899!5m2!1ses!2sar" width="400" height="300" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-        
-        <form action="">
-            <label for="name">Nombre:</label>
+
+        <form action="" class="form">
+            <label for="name" class="special">Nombre:</label>
             <input type="text" id="name" placeholder="John">
 
-            <label for="surname">Apellido:</label>
+            <label for="surname" class="special">Apellido:</label>
             <input type="text" id="surname" placeholder="Doe">
 
-            <label for="age">Edad:</label>
-            <input type="number" id="age" placeholder="30">
+            <label for="age" class="special">Edad:</label>
+            <input type="number" id="age" placeholder="25">
 
-            <label for="mail">e-Mail:</label>
-            <input type="text" id="mail" placeholder="johndoe@gmail.com">
+            <label for="mail" class="special">e-Mail:</label>
+            <input type="email" id="mail" placeholder="johndoe@gmail.com">
 
-            <label for="pass">Contraseña:</label>
-            <input type="password" id="pass">
+            <label for="pass" class="special">Contraseña:</label>
+            <input type="password" id="pass" placeholder="***********">
 
-            <label for="coments">Dejanos tus comentarios:</label>
-            <textarea id="comments" placeholder="Comentarios:"></textarea>
-
-            <input type="submit" value="Enviar">
-            <input type="reset" value="Comenzar de nuevo">
-            <input type="date">
+            <label for="comments" class="special">Dejanos tus comentarios:</label>
+            <textarea id="comments" placeholder="Comentarios..."></textarea>
+            <div class="form-btns-cont">
+                <input type="submit" value="Enviar" class="form-btns">
+                <input type="reset" value="Comenzar de nuevo" class="form-btns">
+            </div>
         </form>
     </main>
 
-    <footer>
-        <h2>ELIA Postres Premium - Todos los derechos reservados</h2>
+<footer class="footer">
+        <h2>Derechos Reservados</h2>
+        <h2>Creado por Eli Bard Guastoni</h2>
         <nav>
-            <ul>
+            <ul class="rs">
                 <li>
-                    <a href="https://www.instagram.com" target="_blank"> 
-                        <img src="../assets/logos/instagram.png" alt="Logo de Instagram" class="redes">
+                    <a href="https://www.instagram.com/" target="_blank">
+                        <img src="../assets/logos/instagram (2).png" alt="Logo de Instagram" class="rrss">
                     </a>
                 </li>
                 <li>
-                    <a href="https://www.facebook.com" target="_blank"> 
-                        <img src="../assets/logos/facebook.png" alt="Logo de Facebook" class="redes">
+                    <a href="https://www.facebook.com/" target="_blank">
+                        <img src="../assets/logos/facebook (2).png" alt="Logo de facebook" class="rrss">
                     </a>
                 </li>
                 <li>
-                    <a href="https://web.whatsapp.com" target="_blank" class="whatsapp"> 
-                        <img src="../assets/logos/whatsapp.png" alt="Logo de Whatsapp" class="redes">
+                    <a href="https://www.x.com/" target="_blank">
+                        <img src="../assets/logos/x.png" alt="Logo de X (Twitter)" class="rrss">
+                    </a>
+                </li>
+                <li>
+                    <a href="https://web.whatsapp.com/" target="_blank">
+                        <img src="../assets/logos/whatsapp (2).png" alt="Logo de WhatsApp" class="rrss wa">
                     </a>
                 </li>
             </ul>
         </nav>
     </footer>
-    
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
+        crossorigin="anonymous"></script>
 </body>
+
 </html>

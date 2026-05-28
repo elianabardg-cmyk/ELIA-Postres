@@ -1,0 +1,37 @@
+@import url('https://fonts.googleapis.com/css2?family=Audiowide&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Marcellus&family=Mogra&family=Playwrite+NO:wght@100..400&display=swap');
+
+$fuentePrincipal: Audiowide;
+$fuenteSecundaria: Marcellus;
+$colorPrincipal: pink;
+$colorSecundario: rgba(165, 42, 42, 0.541);
+$colorFuente: violet;
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: $fuentePrincipal;
+    color: $colorFuente;
+}
+
+body{
+    background-color: whitesmoke;
+    padding: 0 25px;
+}
+
+h1, h2, h3, h4, h5, h6{
+    font-family: $fuenteSecundaria;
+}
+
+.special{
+    text-shadow:
+    0 0 1px $colorPrincipal,
+    0 0 2px $colorSecundario,
+    0 0 5px $colorPrincipal,
+    0 0 15px $colorSecundario,
+    0 0 25px $colorPrincipal,
+    0 0 50px $colorSecundario,
+    0 0 100px $colorPrincipal
+    ;
+}

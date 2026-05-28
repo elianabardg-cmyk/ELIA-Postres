@@ -1,0 +1,96 @@
+@use "../utilities/mixins" as m;
+
+.gal{
+    display: grid;
+    grid-template-areas:
+    "title title title title"
+    "neg neg lucho lucho"
+    "neg neg lucho lucho"
+    "mob2 mob1 mob1 mob3"
+    "tab2 tab1 tab1 tab3"
+    "note1 note1 note2 note2"
+    ;
+    justify-content: space-around;
+    align-content: center;
+    gap: 20px;
+    img.h{
+        width: 40vw;
+        height: auto;
+    }
+    img.v{
+        width: 20vw;
+        height: auto;
+    }
+    .title{grid-area: title;}
+    .neg{grid-area: neg;}
+    .lucho{grid-area: lucho;}
+    .tab1{grid-area: tab1;}
+    .tab2{grid-area: tab2;}
+    .tab3{grid-area: tab3;}
+    .mob1{grid-area: mob1;}
+    .mob2{grid-area: mob2;}
+    .mob3{grid-area: mob3;}
+    .note1{grid-area: note1;}
+    .note2{grid-area: note2;}
+
+    div{ //Padre
+        overflow: hidden; // NO tiene que pasarse de sus limites
+        img{//Hijo
+            transition: transform 1s ease;
+            object-fit: cover; //Esto hace que mantenga el espacio que le asigna el objeto
+            transform-origin: center; // le indica desde donde debe hacer la transformación
+            &:hover{
+                transform: scale(1.5);
+                // scale: 1.5;
+            }
+        }
+    }
+        
+
+    @include m.tablet{
+        display: grid;
+        grid-template-areas:
+        "title title"
+        "neg neg"
+        "lucho lucho"
+        "mob1 mob1"
+        "mob2 mob3"
+        "tab1 tab1"
+        "tab2 tab3"
+        "note1 note1"
+        "note2 note2"
+        ;
+        justify-items: center;
+        gap: 50px;
+        img.h{
+            width: 80vw;
+        }
+        img.v{
+            width: 40vw;
+        }
+    }
+    @include m.mobile{
+        display: grid;
+        grid-template-areas:
+        "title"
+        "neg"
+        "lucho"
+        "mob1"
+        "mob2"
+        "mob3"
+        "tab1"
+        "tab2"
+        "tab3"
+        "note1"
+        "note2"
+        ;
+        justify-items: center;
+        gap: 50px;
+        img.h{
+            width: 80vw;
+        }
+        img.v{
+            width: 40vw;
+        }
+    }
+}

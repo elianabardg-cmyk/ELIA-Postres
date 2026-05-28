@@ -1,0 +1,74 @@
+@use "../utilities/variables" as v;
+@use "../utilities/mixins" as m;
+
+.footer{
+    @include m.flex(row, nowrap, space-around, center, 0);
+    h2{
+        font-family: v.$fuenteSecundaria;
+    }
+    nav{
+        .rs{
+            list-style: none;
+            display: flex;
+            column-gap: 20px;
+            li{
+                a{
+                    img.rrss{
+                        height: 5vh;
+                        width: auto;
+                    }
+                    img.wa{
+                        position: fixed;
+                        bottom: 50px;
+                        right: 50px;
+                        animation: vibrate 1s 500ms ease infinite;  
+                    }
+                }
+            }
+        }
+    }
+    @include m.tablet{
+        flex-wrap: wrap;
+        h2{
+            width: 45vw;
+            text-align: center;
+        }
+        nav{
+            .rs{
+                column-gap: 100px;
+                li{
+                    a{
+                        img.rrss{
+                            height: 6vh;
+                        }
+                        img.wa{
+                            animation: none;
+                        }
+                    }
+                }
+            }
+        }
+    }
+    @include m.mobile{
+        flex-direction: column;
+        text-align: center;
+        h2{
+            width: 90vw;
+        }
+        nav{
+            .rs{
+                column-gap: 50px;
+                li{
+                    a{
+                        img.rss{
+                            height: 5vh;
+                        }
+                        img.wa{
+                            animation: none;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,62 @@
+@use "../utilities/variables" as v;
+@use "../utilities/mixins" as m;
+
+.contacto{
+    @include m.flex(row, nowrap, space-around, center, 0);
+    iframe{
+        width: 30vw;
+    }
+    .form{
+        text-align: center;
+        display: flex;
+        flex-direction: column;
+        width: 30vw;
+        row-gap: 30px;
+        input{
+            padding: 0 10px;
+            text-align: center;
+        }
+        textarea{
+            padding: 10px;
+            text-align: center;
+        }
+        .form-btns-cont{
+            display: flex;
+            justify-content: space-around;
+            .form-btns{
+                padding: 5px 20px;
+                background-color: white;
+                color: pink;
+                border: 2px solid violet;
+                border-radius: 15px;
+                box-shadow: 0 0 5px v.$colorPrincipal, 0 0 15px pink, inset 0 0 5px v.$colorPrincipal;
+            }
+        }
+    }
+    @include m.tablet{
+        flex-direction: column;
+        row-gap: 25px;
+        margin-bottom: 25px;
+        .form{
+            order: 1;
+            width: 80vw;
+        }
+        iframe{
+            order: 2;
+            width: 80vw;
+        }
+    }
+    @include m.mobile{
+        flex-direction: column;
+        row-gap: 25px;
+        margin-bottom: 25px;
+        .form{
+            order: 1;
+            width: 80vw;
+        }
+        iframe{
+            order: 2;
+            width: 80vw;
+        }
+    }
+}

@@ -1,0 +1,44 @@
+@use "../utilities/mixins" as m;
+
+.history{
+    @include m.flex(row, wrap, space-around, center, 0);
+    .about{
+        width: 100vw;
+    }
+    img.img-his{
+        width: 45vw;
+        height: auto;
+        order: 1;
+    }
+    p.about-text{
+        text-align: center;
+        padding: 1rem 5rem;
+        font-size: 1.5rem;
+        order: 2;
+    }
+    @include m.tablet{
+        img.img-his{
+            width: 80vw;
+        }
+        p.about-text{
+            padding: 0.5rem 2.5rem;
+            font-size: 1.25rem;
+        }
+        img.img2{
+            order: 3;
+        }
+    }
+    @include m.mobile{
+        img.img-his{
+            width: 80vw;
+        }
+        p.about-text{
+            padding: 0 1.25rem;
+            font-size: 1rem;
+        }
+        img.img2{
+            order: 3;
+            margin-bottom: 20px;
+        }
+    }
+}

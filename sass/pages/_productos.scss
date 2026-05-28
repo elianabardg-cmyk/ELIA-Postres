@@ -1,0 +1,35 @@
+@use "../utilities/mixins" as m;
+
+.prod{
+    section{
+        .container{
+            .row{
+                .col{
+                    .img-head{
+                        width: 60vw;
+                        height: auto;
+                    }
+                    h4{
+                        font-size: 1rem;
+                    }
+                    h3.special{
+                        font-size: 1rem;
+                    }
+                }
+            }
+        }
+    }
+    @include m.mobile{
+        section{
+            .container{
+                .row{
+                    .col{
+                        .my-3{
+                            text-align: center;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

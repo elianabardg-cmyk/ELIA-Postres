@@ -1,0 +1,22 @@
+@use "../utilities/mixins" as m;
+
+.header{
+    height: 10vh;
+    background-color: pink;
+    nav{
+        .container-fluid{
+            .navbar-brand{
+                img.logo{
+                    height: 8vh;
+                    width: auto;
+                }
+            }
+        }
+    }
+    @include m.tablet{
+        height: auto;
+    }
+    @include m.mobile{
+        height: auto;
+    }
+}
